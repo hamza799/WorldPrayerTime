@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:description" content="COVID-19 3D Visualization." />
+    <meta
+      name="monetization"
+      content="$coil.xrptipbot.com/701298d5-481d-40ff-9945-336671ab2c42"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Space+Mono:400,700&display=swap"
+      rel="stylesheet"
+    />
+    <meta property="og:image" content="https://i.imgur.com/1AFEXhs.png" />
+    <title>اوقات الصلاة حسب  عواصم العالم</title>
+    <link rel="stylesheet" href="/main.css" />
+  </head>
+  <body>
+    <div id="globeViz"></div>
+    <div class="top-info-container">
+      <div class="title">إن الصلاة كانت على المؤمنين كتابا موقوتا</div>
+      <div class="title-desc">
+        وَٱذْكُر رَّبَّكَ إِذَا نَسِيتَ وَقُلْ عَسَىٰٓ أَن يَهْدِيَنِ رَبِّى لِأَقْرَبَ مِنْ هَٰذَا رَشَدًا...
+      </div>
+    </div>
+
+    <div class="bottom-info-container">
+      <div style="display: flex; justify-content: center;">
+        <div class="timeline-container">
+          <button disabled style="margin-right: 10px;" class="play-button">
+            Play
+          </button>
+          <input
+            class="slider"
+            disabled
+            type="range"
+            min="0"
+            max="1"
+            step="1"
+          />
+          <span
+            style="font-size: 14px; color: #ccd6f6;"
+            class="slider-date"
+          ></span>
+        </div>
+      </div>
+      <div style="font-size: 14px; color: #ccd6f6; margin-top: 35px;">
+         <span class="updated"></span>
+      </div>
+      <div style="color: #e6f1ff; padding: 0 5px;">
+        <span id="deaths"></span> <span id="recovered">*</span>
+        رَبِّ ٱجْعَلْنِى مُقِيمَ ٱلصَّلَوٰةِ وَمِن ذُرِّيَّتِى ۚ رَبَّنَا وَتَقَبَّلْ دُعَآءِ  <span id="infected"></span> 
+        <span id="deaths"></span> <span id="recovered">*</span>
+      </div>
+     
+    </div>
+
+    <script type="module" src="/_dist_/app.js"></script>
+  </body>
+</html>
